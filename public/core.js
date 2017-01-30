@@ -3,6 +3,7 @@ var dragdropApp = angular.module('dragdropApp', []);
 dragdropApp.controller('mainController',['$scope','$http',function($scope, $http){
     $scope.formData = {};
     $scope.dirShown=false;
+    
     $scope.fileContent="";
     $scope.files="";
     $scope.arrInner=[];
