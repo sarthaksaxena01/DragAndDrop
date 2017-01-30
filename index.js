@@ -57,7 +57,6 @@ app.post('/pushCsv',function(req,res) {
         }
     });
     res.json("data is successfully saved");
-
 })
 
 // listen (start app with node server.js) ======================================
