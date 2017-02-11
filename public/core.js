@@ -28,7 +28,7 @@ dragdropApp.controller('mainController',['$scope','$http',function($scope, $http
 
     $scope.contr=function(val){
             //var obj={},counter=0;
-            $scope.lineArray=val.split("\\r\\n");
+            $scope.lineArray=val.split("\\n");
             $scope.lineArray[0]=$scope.lineArray[0].substring(1,$scope.lineArray[0].length);
             $scope.lineArray[$scope.lineArray.length-1]=$scope.lineArray[$scope.lineArray.length-1].substring(0,$scope.lineArray[$scope.lineArray.length-1].length-1);
             //console.log($scope.lineArray);
