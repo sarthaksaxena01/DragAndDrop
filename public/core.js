@@ -59,6 +59,12 @@ dragdropApp.controller('mainController',['$scope','$http',function($scope, $http
     }
 
     $scope.fileConversion=function() {
+            for(var i=0;i<$scope.separateArray.length;i++){
+                if($scope.copyArr.indexOf($scope.separateArray[i][0])==-1){
+                    $scope.separateArray.splice(i,1);
+                    i--;
+                }
+            }
             var dataToSend={
                 arr:$scope.separateArray
             }
